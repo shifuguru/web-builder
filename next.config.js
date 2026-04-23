@@ -1,10 +1,12 @@
+const isProd = process.env.NODE_ENV === 'production';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/web-builder',
+  output: isProd ? 'export' : undefined,
+  basePath: isProd ? '/web-builder' : '',
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

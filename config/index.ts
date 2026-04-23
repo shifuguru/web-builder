@@ -4,6 +4,7 @@ export interface SiteConfig {
   ctaText: string;
   primaryColor: string;
   secondaryColor: string;
+  features: string[];
   sections: {
     hero: boolean;
     features: boolean;
@@ -18,6 +19,7 @@ export const defaultConfig: SiteConfig = {
   ctaText: 'Get Started',
   primaryColor: '#3B82F6',
   secondaryColor: '#1E40AF',
+  features: ['Fast', 'Reliable', 'Modern'],
   sections: {
     hero: true,
     features: true,

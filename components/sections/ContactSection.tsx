@@ -17,7 +17,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ secondaryColor }) => {
           </div>
           <div className="flex items-center">
             <span className="text-2xl mr-2">📞</span>
-            <span className="text-gray-700">(555) 123-4567</span>
+            <span className="text-gray-700">(+64) 022 586 8381</span>
           </div>
         </div>
         <button className="mt-8 px-8 py-4 text-white font-semibold rounded-lg" style={{ backgroundColor: secondaryColor }}>Contact Now</button>
